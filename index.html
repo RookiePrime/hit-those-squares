@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hit Those Squares!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="wrapper">
+        <a href="https://junocollege.com/" >Created at Juno College</a>
+    </header>
+    <section class="wrapper">
+        <h1>Hit Those Squares!</h1>
+        <h2 class="score-text">Score: <span id="score">0</span></h2>
+        <div class="timer-box">
+            <h2 id="timer"></h2>
+        </div>
+        <div class="options">
+            <form action="#" class="difficulty">
+                <fieldset>
+                    <legend>Choose the Difficulty</legend>
+                </fieldset>
+                <div class="radios">
+                    <div class="radio-container">
+                        <label for="easy">Easy</label>
+                        <input type="radio" name="difficulty" value="Easy" id="1">
+                    </div>
+                    <div class="radio-container">
+                        <label for="medium">Medium</label>
+                        <input type="radio" name="difficulty" value="Medium" id="2">
+                    </div>
+                    <div class="radio-container">
+                        <label for="hard">Hard</label>
+                        <input type="radio" name="difficulty" value="Hard" id="3">
+                    </div>
+                </div>
+            </form>
+            <button id="start">Start</button>
+        </div>
+        <div class="board"></div>
+    </section>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="script.js"></script>
+</body>
+</html>
